@@ -6,8 +6,9 @@ from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from sklearn.model_selection import GridSearchCV
 
 flowerDataSet = pd.read_csv("IRIS.csv")
-notSetosaTrain = flowerDataSet.query("species != 'Iris-setosa'").iloc[0::2]
-notSetosaTest = flowerDataSet.query("species != 'Iris-setosa'").iloc[1::2]
+notSetosaTrain = flowerDataSet.iloc[0::2]
+notSetosaTest = flowerDataSet.iloc[1::2]
+print(flowerDataSet.shape)
 
 x = notSetosaTrain[["sepal_length", "sepal_width", "petal_length", "petal_width"]]
 y = notSetosaTrain["species"]
