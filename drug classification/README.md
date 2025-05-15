@@ -11,4 +11,5 @@ BP: 0 for low, .5 for medium, 1 for high
 Chol.: 0 for low, 1 for high.
 ## results
 based on our 50 test entries, we are 94% accurate with our predictions.
-![image] 
+
+![image](https://github.com/jthering234156789/projects/blob/main/drug%20classification/confMatrix.png)
